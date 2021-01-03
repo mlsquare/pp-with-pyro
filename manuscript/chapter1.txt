@@ -1,4 +1,0 @@
-{sample: true}
-# Foreword
-
-In this lecture notes, we will cover Probabilistic Programming. 

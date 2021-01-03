@@ -1,0 +1,43 @@
+= eBook Template
+:author: Soma S Dhavala
+:email:  soma.dhavala@gmail.com
+:revnumber: 0.1
+:revdate:   January 3rd, 2021
+:doctype: book
+:toc:
+:icons:
+:data-uri:
+:lang: en
+:language: javadocript
+
+[preface]
+include::chapters/about.adoc[]
+include::chapters/preface.adoc[]
+
+
+== Introduction
+
+include::chapters/introduction.adoc[]
+
+== First Part
+
+include::chapters/chapter2.adoc[]
+
+== Second Part
+
+include::chapters/chapter3.adoc[]
+
+[colophon]
+include::chapters/colophon.adoc[]
+
+include::chapters/bibliography.adoc[]
+
+[appendix]
+include::chapters/appendix.adoc[]
+
+ifdef::backend-docbook[]
+[index]
+Index
+-----
+endif::backend-docbook[]
+
