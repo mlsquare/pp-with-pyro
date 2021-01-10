@@ -1,0 +1,23 @@
+# Jupyter Notebook files
+
+You can create content with Jupyter notebooks.
+For example, the content for the current page is contained in {download}`this notebook file <./notebooks.ipynb>`.
+
+```{margin}
+If you'd like to write in plain-text files, but still keep a notebook structure, you can write
+Jupyter notebooks with MyST Markdown, which are then automatically converted to notebooks.
+See [](./myst-notebooks.md) for more details.
+```
+
+Jupyter Book supports all Markdown that is supported by Jupyter Notebook.
+This is mostly a flavour of Markdown called [CommonMark Markdown](https://commonmark.org/) with minor modifications.
+For more information about writing Jupyter-flavoured Markdown in Jupyter Book, see [](./markdown.md).
+
+## Code blocks and image outputs
+
+Jupyter Book will also embed your code blocks and output in your book.
+For example, here's some sample Matplotlib code:
+
+print(1+1)
+
+

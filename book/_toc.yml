@@ -1,0 +1,7 @@
+# - file: README
+- file: docs/index
+  sections:
+    - file: docs/01_preface
+    - file: docs/02_getting_started
+    - file: notebooks/case-studies/eg
+    - file: docs/about

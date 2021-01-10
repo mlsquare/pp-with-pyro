@@ -1,0 +1,47 @@
+Traceback (most recent call last):
+  File "/Users/soma/opt/anaconda3/envs/mlsq/lib/python3.8/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/Users/soma/opt/anaconda3/envs/mlsq/lib/python3.8/site-packages/nbclient/client.py", line 1087, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/soma/opt/anaconda3/envs/mlsq/lib/python3.8/site-packages/nbclient/util.py", line 74, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/soma/opt/anaconda3/envs/mlsq/lib/python3.8/site-packages/nbclient/util.py", line 53, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/soma/opt/anaconda3/envs/mlsq/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/Users/soma/opt/anaconda3/envs/mlsq/lib/python3.8/site-packages/nbclient/client.py", line 540, in async_execute
+    await self.async_execute_cell(
+  File "/Users/soma/opt/anaconda3/envs/mlsq/lib/python3.8/site-packages/nbclient/client.py", line 832, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/Users/soma/opt/anaconda3/envs/mlsq/lib/python3.8/site-packages/nbclient/client.py", line 740, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply['content'])
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# Jupyter Notebook files
+
+You can create content with Jupyter notebooks.
+For example, the content for the current page is contained in {download}`this notebook file <./notebooks.ipynb>`.
+
+```{margin}
+If you'd like to write in plain-text files, but still keep a notebook structure, you can write
+Jupyter notebooks with MyST Markdown, which are then automatically converted to notebooks.
+See [](./myst-notebooks.md) for more details.
+```
+
+Jupyter Book supports all Markdown that is supported by Jupyter Notebook.
+This is mostly a flavour of Markdown called [CommonMark Markdown](https://commonmark.org/) with minor modifications.
+For more information about writing Jupyter-flavoured Markdown in Jupyter Book, see [](./markdown.md).
+
+## Code blocks and image outputs
+
+Jupyter Book will also embed your code blocks and output in your book.
+For example, here's some sample Matplotlib code:
+------------------
+
+[0;36m  File [0;32m"<ipython-input-1-8f5bcfe68ce2>"[0;36m, line [0;32m3[0m
+[0;31m    You can create content with Jupyter notebooks.[0m
+[0m        ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m invalid syntax
+
+SyntaxError: invalid syntax (<ipython-input-1-8f5bcfe68ce2>, line 3)
+
